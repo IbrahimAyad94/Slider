@@ -1,0 +1,105 @@
+/* Start Gloabel Style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Tahoma', 'Arial';
+}
+
+/* End Gloabel Style */
+
+/* slider  */
+.slider-container {
+    position: relative;
+    margin: 40px auto;
+    width: 800px;
+    height: 250px;
+}
+
+.slider-container img{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .6s;
+}
+
+.slider-container img.active {
+    opacity: 1;
+}
+
+.slider-container .slide-number{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(0, 0, 0, .6);
+    font-size: 20px;
+    z-index: 2;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+
+
+.slider-controls {
+    margin: auto;
+    width: 800px;
+    overflow: auto;
+}
+
+.slider-controls .prev,
+.slider-controls .next{
+    font-size: 16px;
+    color: #FFF;
+    background-color: #009688;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+}
+
+.slider-controls .prev {
+    float: left;
+}
+
+.slider-controls .next {
+    float: right;
+}
+
+.slider-controls .prev.disabled,
+.slider-controls .next.disabled {
+    background-color: rgba(0, 150, 136, .5);
+    cursor: no-drop;
+}
+
+/* indicator */
+.slider-controls .indicator {
+    width: 60%;
+    float: left;
+}
+.slider-controls .indicator ul{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+.slider-controls .indicator ul li{
+    color: #333;
+    display: inline-block;
+    margin: 0 2px;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+
+}
+.slider-controls .indicator ul li.active{
+    background-color: #009688;
+    color: #FFF;    -
+}
+/* indicator */
